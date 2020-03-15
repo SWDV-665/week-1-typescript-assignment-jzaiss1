@@ -23,7 +23,7 @@ class Groceries {
     return "<td>" + item.itemName + "</td><td>" + item.quantity + "</td><td> $" + item.price + "</td>"
   }
   
-  let grocertList = [
+  let groceryList = [
       groceryItem(new Groceries("Milk", 4, 3.15)), 
       groceryItem(new Groceries("Bread", 2, 3.75)),
       groceryItem(new Groceries("Apples", 8, 0.75)), 
@@ -34,7 +34,7 @@ class Groceries {
 
   let listTable = "<table>";
 
-  for (let i of grocertList) {
+  for (let i of groceryList) {
         listTable += "<tr>" + i + "</tr>";
   }
 

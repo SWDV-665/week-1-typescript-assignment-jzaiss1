@@ -13,7 +13,7 @@ var Groceries = /** @class */ (function () {
 function groceryItem(item) {
     return "<td>" + item.itemName + "</td><td>" + item.quantity + "</td><td> $" + item.price + "</td>";
 }
-var grocertList = [
+var groceryList = [
     groceryItem(new Groceries("Milk", 4, 3.15)),
     groceryItem(new Groceries("Bread", 2, 3.75)),
     groceryItem(new Groceries("Apples", 8, 0.75)),
@@ -22,8 +22,8 @@ var grocertList = [
     groceryItem(new Groceries("Juice", 1, 3.75))
 ];
 var listTable = "<table>";
-for (var _i = 0, grocertList_1 = grocertList; _i < grocertList_1.length; _i++) {
-    var i = grocertList_1[_i];
+for (var _i = 0, groceryList_1 = groceryList; _i < groceryList_1.length; _i++) {
+    var i = groceryList_1[_i];
     listTable += "<tr>" + i + "</tr>";
 }
 listTable += "</table>";
